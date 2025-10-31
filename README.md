@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Solana Wallet
 
-First, run the development server:
+The Solana Wallet is a web application that allows users to generate and manage Solana wallets securely in their browser. It provides a simple interface for creating hierarchical deterministic (HD) wallets from mnemonic seed phrases and supports multiple wallet addresses derivation.
+![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot1.png)
+
+![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot1.png)
+
+![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot1.png)
+## 🚀 Features
+
+- **🔐 Secure Wallet Generation** - BIP39 mnemonic phrases with 128-bit entropy
+- **📱 Multiple Wallet Support** - Derive multiple Solana addresses from one seed
+- **💻 Client-Side Only** - All key generation happens in your browser
+- **👛 HD Wallet Support** - Hierarchical Deterministic wallet structure (BIP44)
+- **⚡ Real-time Balance** - Check SOL balances for generated wallets
+- **📱 Responsive Design** - Works on desktop and mobile devices
+- **🎨 Modern UI** - Built with Tailwind CSS and shadcn/ui components
+
+## How to Use
+1.  **Generate Seed Phrase**: Click "Generate Seed Phrase" to create a new 12-word mnemonic
+    
+2.  **Copy Your Phrase**: Click on the displayed phrase to copy it to clipboard (store it securely!)
+    
+3.  **Select Blockchain**: Choose Solana as your blockchain (currently supports Solana only)
+    
+4.  **Manage Wallets**: Use the wallet selector to generate and switch between multiple wallet addresses
+    
+5.  **Check Balance**: View your SOL balance for the selected wallet
+    
+6.  **Make Transactions**: Use the payment interface to send transactions (when implemented
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 with React
+- **Blockchain**: Solana Web3.js
+- **Cryptography**: 
+  - `bip39` - Mnemonic generation
+  - `tweetnacl` - Ed25519 key pairs
+  - `ed25519-hd-key` - HD key derivation
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+
+## 📦 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Clone the repository
+git clone https://github.com/VatsalCodes44/solana-wallet.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Navigate to project directory
+cd solana-wallet
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Install dependencies
+pnpm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Setup environment variables
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Start development server
+pnpm run dev
