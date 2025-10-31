@@ -4,9 +4,9 @@
 The Solana Wallet is a web application that allows users to generate and manage Solana wallets securely in their browser. It provides a simple interface for creating hierarchical deterministic (HD) wallets from mnemonic seed phrases and supports multiple wallet addresses derivation.
 ![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot1.png)
 
-![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot1.png)
+![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot2.png)
 
-![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot1.png)
+![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot3.png)
 ## 🚀 Features
 
 - **🔐 Secure Wallet Generation** - BIP39 mnemonic phrases with 128-bit entropy
