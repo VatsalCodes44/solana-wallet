@@ -57,3 +57,12 @@ pnpm install
 
 # Start development server
 pnpm run dev
+```
+
+## ⚠️ Disclaimer
+
+This software is provided for educational and development purposes only. Users are solely responsible for the security of their keys and funds. Always exercise caution when dealing with cryptocurrency wallets.
+
+----------
+
+**Built with ❤️ for the Solana community**
