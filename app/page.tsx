@@ -10,21 +10,17 @@ import bs58 from "bs58"
 import {ethers} from "ethers"
 import axios from "axios";
 import { getBalance } from "@/serverActions/getBalance";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Pay } from "@/ui/Pay";
 
 const createEthereumWallet = (mnemonic: string, i: number) => {
   const seed = mnemonicToSeedSync(mnemonic);
   const hdNode = ethers.HDNodeWallet.fromSeed(seed);
 
-  const derivationPath = `m/44'/501'/${i}'/0'/0/0`
-  const child = hdNode.derivePath(derivationPath);  
-  console.log("eth")
+  const derivationPath = `m/44'/60'/${i}'/0'`
+  const child = hdNode.derivePath(derivationPath);
   return {
-    pubKey: child.publicKey,
-    pvtKey: child.address
+    pubKey: child.address,
+    pvtKey: child.privateKey
   }
 }
 
@@ -33,7 +29,6 @@ const createSolanaWallet = (mnemonic: string, i: number) => {
   const path = `m/44'/501'/${i}'/0'`;
   const privateKeyderivedSeed = derivePath(path, seed.toString("hex")).key;
   const secret = nacl.sign.keyPair.fromSeed(privateKeyderivedSeed).secretKey;
-  console.log("sol")
   return {
     pubKey: Keypair.fromSecretKey(secret).publicKey.toBase58(),
     pvtKey: bs58.encode(secret)

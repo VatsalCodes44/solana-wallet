@@ -1,21 +1,44 @@
 
-# Solana Wallet
-
-The Solana Wallet is a web application that allows users to generate and manage Solana wallets securely in their browser. It provides a simple interface for creating hierarchical deterministic (HD) wallets from mnemonic seed phrases and supports multiple wallet addresses derivation.
+# 🎒 Cross-Chain Wallet
+A modern, cross-chain cryptocurrency wallet that supports both Ethereum and Solana blockchains. Send, receive, and manage assets across multiple networks with a single, intuitive interface.
 ![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot1.png)
 
 ![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot3.png)
 
 ![Solana Wallet](https://github.com/VatsalCodes44/solana-wallet/blob/main/public/Screenshot2.png)
-## 🚀 Features
 
-- **🔐 Secure Wallet Generation** - BIP39 mnemonic phrases with 128-bit entropy
-- **📱 Multiple Wallet Support** - Derive multiple Solana addresses from one seed
-- **💻 Client-Side Only** - All key generation happens in your browser
-- **👛 HD Wallet Support** - Hierarchical Deterministic wallet structure (BIP44)
-- **⚡ Real-time Balance** - Check SOL balances for generated wallets
-- **📱 Responsive Design** - Works on desktop and mobile devices
-- **🎨 Modern UI** - Built with Tailwind CSS and shadcn/ui components
+# 🌟 Features
+
+## 🔐 Security & Wallet Management
+- **BIP39 Mnemonic Phrases** – 12/24-word seed phrases with 128-bit entropy  
+- **Cross-Chain HD Wallets** – Single seed for both Ethereum and Solana (BIP44)  
+- **Client-Side Generation** – All keys generated locally in your browser  
+- **Multiple Account Support** – Derive multiple addresses from one seed phrase  
+
+---
+
+## ⛓️ Multi-Blockchain Support
+- **Ethereum Network** – Send/receive ETH on Mainnet, Sepolia, and other EVM chains  
+- **Solana Network** – Send/receive SOL on Mainnet, Devnet, and Testnet  
+- **Unified Interface** – Manage both chains from a single dashboard  
+- **Cross-Chain Transactions** – Seamlessly switch between blockchain networks  
+
+---
+
+## 💰 Asset Management
+- **Real-time Balances** – Live ETH and SOL balance tracking  
+- **Transaction History** – View recent transactions across both networks  
+- **Gas Optimization** – Smart gas estimation for Ethereum transactions  
+- **Priority Fee Control** – Customizable priority fees on Solana  
+
+---
+
+## 🛠️ Technical Features
+- **HD Wallet Structure** – Hierarchical Deterministic wallets (BIP32/BIP44)  
+- **Raw Transaction Support** – Sign and broadcast raw transactions  
+- **RPC Integration** – Alchemy for Ethereum, direct RPC for Solana  
+- **Responsive Design** – Built with Tailwind CSS and shadcn/ui components  
+
 
 ## How to Use
 1.  **Generate Seed Phrase**: Click "Generate Seed Phrase" to create a new 12-word mnemonic
